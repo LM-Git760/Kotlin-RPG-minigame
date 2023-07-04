@@ -1,2 +1,2 @@
-class Held {
+class Held(name:String):Charakter(name) {
 }
