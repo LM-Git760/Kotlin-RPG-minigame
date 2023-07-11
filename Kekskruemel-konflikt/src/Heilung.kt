@@ -1,0 +1,1 @@
+class Heilung(val heilung: Int):Aktion("Heilung")
