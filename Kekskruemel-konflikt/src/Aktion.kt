@@ -1,2 +1,1 @@
-class Aktion {
-}
+abstract class Aktion(val name:String)
