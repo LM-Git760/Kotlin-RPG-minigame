@@ -1,2 +1,0 @@
-class Schutzzauber : Aktion("Schutzzauber") {
-}
