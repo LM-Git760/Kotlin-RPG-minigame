@@ -1,7 +1,5 @@
 package rpggame
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction
-
 abstract class Held(name: String, hp: Int, val aktionen: List<Aktion>,val beutel: Beutel): Charakter(name,hp, hp){
 
     override fun waehleAktion(): Aktion {
