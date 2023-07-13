@@ -1,7 +1,7 @@
 package rpggame
 
 fun main(){
-    val heldenTeam = mutableListOf<Held>(Magier(
+    val heldenTeam = mutableListOf(Magier(
         name = "Mirakulis",
         hp = 100,
         beutel = Beutel(mutableListOf(Heiltrank(),Vitamine()))

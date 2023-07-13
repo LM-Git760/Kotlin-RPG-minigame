@@ -2,6 +2,8 @@ package rpggame
 
 class Spiel(var helden: MutableList<Held>, var gegner: MutableList<Gegner>) {
     fun start() {
+        println("---------- SPIEL BEGINNT ----------\n")
+
         // Ausgabe der Helden und Gegner zu Beginn des Spiels
         helden.forEach { held -> println("${held.name} (${held.hp} HP) tritt auf das Spielfeld!") }
         Thread.sleep(800)
@@ -24,6 +26,7 @@ class Spiel(var helden: MutableList<Held>, var gegner: MutableList<Gegner>) {
                 }
             }
             // Gegner sind am Zug
+            println("---------- GEGNER SIND AM ZUG ----------\n")
             for (gegner in gegner) {
                 if (gegner.hp > 0 && helden.any {it.hp > 0}) {
                     println("${gegner.name}(${gegner.hp}HP) ist an der Reihe.")
@@ -40,6 +43,7 @@ class Spiel(var helden: MutableList<Held>, var gegner: MutableList<Gegner>) {
             }
         }
         // Spielende
+        println("---------- SPIEL ENDE ----------\n")
         if (helden.any { it.hp > 0 }) {
             println("Glückwunsch! Du hast alle Gegner besiegt.")
         } else {
