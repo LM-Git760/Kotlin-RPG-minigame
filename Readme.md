@@ -11,7 +11,7 @@ Ein einfaches, textbasiertes Rollenspiel (RPG), das in Kotlin geschrieben wurde.
 
 ## Einleitung
 
-In diesem Spiel kannst du verschiedene Charaktere mit einzigartigen Fähigkeiten gegen eine Vielzahl von Gegnern kämpfen.
+In diesem Spiel kannst du mit verschiedenen Charakteren die einzigartigen Fähigkeiten haben gegen eine Vielzahl von Gegnern kämpfen.
 Dein Held hat auch einen Beutel, um verschiedene Gegenstände wie Heiltränke und Vitamine zu verwenden.
 
 ## Funktionalitäten
@@ -22,9 +22,9 @@ Dein Held hat auch einen Beutel, um verschiedene Gegenstände wie Heiltränke un
 
 ## Installation
 
-Stellen Sie sicher, dass Sie Kotlin und JDK auf Ihrem Computer installiert haben.
+Stelle Sie sicher, dass du Kotlin und JDK auf deinem Computer installiert hast.
 
-Klonen Sie dieses Repository und importieren Sie es in Ihre bevorzugte IDE.
+Klone dieses Repository und importiere es in deiner bevorzugte IDE.
 
 ## Verwendung
 
