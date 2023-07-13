@@ -11,7 +11,7 @@ Ein einfaches, textbasiertes Rollenspiel (RPG), das in Kotlin geschrieben wurde.
 
 ## Einleitung
 
-In diesem Spiel kannst du mit verschiedenen Charakteren die einzigartigen Fähigkeiten haben gegen eine Vielzahl von Gegnern kämpfen.
+In diesem Spiel kannst du mit verschiedenen Charakteren die einzigartige Fähigkeiten haben gegen eine Vielzahl von Gegnern kämpfen.
 Dein Held hat auch einen Beutel, um verschiedene Gegenstände wie Heiltränke und Vitamine zu verwenden.
 
 ## Funktionalitäten
