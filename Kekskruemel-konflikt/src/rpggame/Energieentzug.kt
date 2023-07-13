@@ -1,4 +1,4 @@
-package RPGV2
+package rpggame
 
 class Energieentzug : Aktion("Energieentzug") {
     override fun ausfuehren(ausfuehrer: Charakter, ziel: Charakter) {

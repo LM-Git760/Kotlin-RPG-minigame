@@ -1,4 +1,4 @@
-package RPGV2
+package rpggame
 
 class Heiltrank:Gegenstand("Heiltrank") {
     override fun benutzen(held: Held) {
@@ -7,5 +7,6 @@ class Heiltrank:Gegenstand("Heiltrank") {
         if (held.hp > maxHp){
             held.hp = maxHp
         }
+        println("${held.name} hat einen Heiltrank gentrunken (${held.hp})HP")
     }
 }

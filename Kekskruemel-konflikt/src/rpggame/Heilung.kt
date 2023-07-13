@@ -1,4 +1,4 @@
-package RPGV2
+package rpggame
 
 import kotlin.random.Random
 

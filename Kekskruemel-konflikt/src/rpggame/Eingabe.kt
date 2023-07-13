@@ -1,4 +1,4 @@
-package RPGV2
+package rpggame
 
 fun zeigeAktionen(aktionen: List<Aktion>): Int {
     println("Wähle eine Aktion aus:")

@@ -1,4 +1,4 @@
-package RPGV2
+package rpggame
 fun main() {
     val heros:MutableList<Held> = mutableListOf(Magier(
         "Hokimoki",
@@ -6,6 +6,10 @@ fun main() {
         Beutel()),
         Krieger(
             "MrSteel",
+            100,
+            Beutel(mutableListOf(Vitamine(),Heiltrank()))
+        ),Krieger(
+            "MrsGold",
             100,
             Beutel(mutableListOf(Vitamine(),Heiltrank()))
         ))

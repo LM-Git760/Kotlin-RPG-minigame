@@ -1,4 +1,4 @@
-package RPGV2
+package rpggame
 
 /*
 class Spiel(var helden: MutableList<Held>, var gegner: MutableList<Gegner>) {

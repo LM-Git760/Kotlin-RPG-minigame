@@ -1,4 +1,4 @@
-package RPGV2
+package rpggame
 
 class AdminHammer() : Aktion("ADMINHAMMER") {
     override fun ausfuehren(ausfuehrer: Charakter, ziel: Charakter) {

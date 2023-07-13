@@ -1,4 +1,4 @@
-package RPGV2
+package rpggame
 
 class Unterboss: Gegner("Unterboss", 100, listOf(
     NormalerAngriff(),
