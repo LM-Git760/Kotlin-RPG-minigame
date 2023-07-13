@@ -1,7 +1,6 @@
 package rpggame
 
-class Krieger(name: String, hp:Int, beutel: Beutel) : Held(name, 100, listOf(
+class Krieger(name: String, hp:Int, beutel: Beutel) : Held(name, hp, listOf(
         NormalerAngriff(),
-        AdminHammer(),
-    ), beutel
+        SchwertSchwinger()), beutel
 )

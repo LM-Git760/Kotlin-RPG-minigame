@@ -5,17 +5,17 @@ import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction
 abstract class Held(name: String, hp: Int, val aktionen: List<Aktion>,val beutel: Beutel): Charakter(name,hp, hp){
 
     override fun waehleAktion(): Aktion {
-        //Zeige alle verfügbaren Aktionen für den Held an
+        //Zeige alle verfügbaren Aktionen für den Helden an
         println("Bitte wählen sie eine der Folgenden Möglichkeiten:")
-        aktionen.forEachIndexed { index, aktion -> println("$index: ${aktion.name}") }
+        aktionen.forEachIndexed { index, aktion -> println("${index + 1}: ${aktion.name}") }
 
-        //Zeige Option für Beutel an wenn dieser nicht leer ist.
+        //Zeige Option für Beutel an, wenn dieser nicht leer ist.
         if (beutel.gegenstaende.isNotEmpty()){
-            println("${aktionen.size}: Gegenstand aus dem Beutel benutzen (${beutel.gegenstaende.size})")
+            println("${aktionen.size + 1}: Gegenstand aus dem Beutel benutzen (${beutel.gegenstaende.size})")
         }
 
         // Benutzer Auswahl einlesen
-        val eingabe:Int? = readln()?.toIntOrNull()
+        val eingabe:Int? = readln()?.toIntOrNull()?.minus(1)
 
 
         //Überprüfung ob eingabe für Aktion gültig oder Gegenstand benutzen gewählt wurde
@@ -48,9 +48,9 @@ abstract class Held(name: String, hp: Int, val aktionen: List<Aktion>,val beutel
     private fun waehleUndBenutzeGegenstand() {
         //Alle Gegenstände im Beutel anzeigen
         println("Wählen sie einen der folgenden Gegenstände:")
-        beutel.gegenstaende.forEachIndexed { index, aktion -> println("$index: ${aktion.name}") }
+        beutel.gegenstaende.forEachIndexed { index, aktion -> println("${index + 1}: ${aktion.name}") }
 
-        val auswahl = readln()?.toIntOrNull()
+        val auswahl = readln()?.toIntOrNull()?.minus(1)
         //Eingabe aus Beutel benutzen
         if (auswahl != null && auswahl < beutel.gegenstaende.size){
             val gegenstand = beutel.gegenstaende[auswahl]

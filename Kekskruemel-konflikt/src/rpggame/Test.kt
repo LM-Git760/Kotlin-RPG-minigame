@@ -2,18 +2,17 @@ package rpggame
 fun main() {
     val heros:MutableList<Held> = mutableListOf(Magier(
         "Hokimoki",
-        100,
+        hp = 1,
         Beutel()),
         Krieger(
-            "MrSteel",
-            100,
+            "MrSteel", hp = 10,
             Beutel(mutableListOf(Vitamine(),Heiltrank()))
         ),Krieger(
             "MrsGold",
-            100,
+            hp = 10,
             Beutel(mutableListOf(Vitamine(),Heiltrank()))
         ))
-    val darkboys:MutableList<Gegner> = mutableListOf(DunklerMagier(),Drache())
+    val darkboys:MutableList<Gegner> = mutableListOf(DunklerMagier(),Drache(),Unterboss())
     var spielfeld:Spiel = Spiel(heros,darkboys)
     spielfeld.start()
 }

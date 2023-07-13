@@ -9,6 +9,6 @@ abstract class Gegner(name: String, hp: Int,val aktionen: List<Aktion>) : Charak
     }
 
     override fun waehleZiel(gegner: List<Charakter>): Charakter {
-        return gegner[Random.nextInt(gegner.size)]
+            return gegner[Random.nextInt(gegner.size)]
+        }
     }
-}
